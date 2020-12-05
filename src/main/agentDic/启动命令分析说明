@@ -1,0 +1,19 @@
+命令：java -javaagent:E:\codeProject\github\ttl-agent-demo\src\main\agentDic\ttl\transmittable-thread-local-2.11.5.jar -javaagent:E:\codeProject\github\ttl-agent-demo\src\main\agentDic\skywalking\skywalking-agent.jar -jar .\ttl-agent-demo-1.0.0-SNAPSHOT.jar
+运行结果：程序正常；ttl agent正常；ttl api正常
+
+
+命令：java -javaagent:E:\codeProject\github\ttl-agent-demo\src\main\agentDic\skywalking\skywalking-agent.jar -javaagent:E:\codeProject\github\ttl-agent-demo\src\main\agentDic\ttl\transmittable-thread-local-2.11.5.jar -jar .\ttl-agent-demo-1.0.0-SNAPSHOT.jar
+运行结果：程序正常；ttl agent失效；ttl api正常
+
+
+命令：java -javaagent:E:\codeProject\github\ttl-agent-demo\src\main\agentDic\skywalking\skywalking-agent.jar -jar .\ttl-agent-demo-1.0.0-SNAPSHOT.jar
+运行结果：程序正常；未使用ttl agent；ttl api正常
+
+命令：java -javaagent:E:\codeProject\github\ttl-agent-demo\src\main\agentDic\ttl\transmittable-thread-local-2.11.5.jar -jar .\ttl-agent-demo-1.0.0-SNAPSHOT.jar
+运行结果：程序正常；ttl agent正常；ttl api正常
+
+
+
+说明：
+1、Skywalking agent中未引入ttl相关类或者jar
+2、ttl包名未做修改
