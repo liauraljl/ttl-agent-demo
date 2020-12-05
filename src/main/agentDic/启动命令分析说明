@@ -17,3 +17,8 @@
 说明：
 1、Skywalking agent中未引入ttl相关类或者jar
 2、ttl包名未做修改
+
+请求路径：
+http://127.0.0.1:8080/ttl/acrossThread
+http://127.0.0.1:8080/ttl/ttlApi
+http://127.0.0.1:8080/ttl/ttlAgent
